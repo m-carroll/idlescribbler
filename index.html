@@ -15,35 +15,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
-
-
-<style>
-</style>
-
+    <!-- import js util files -->
+    <script type="text/javascript" src="./js/searchUtils.js"></script>
+    <script type="text/javascript" src="./js/responsiveUtils.js"></script>
 </head>
 
 <body style="margin: 0;">
     <div class="header">
         <img src="./img/isLogo.svg" alt="Idle Scribbler">
         <div class="topnav" id="myTopnav">
-        
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+
+            <a href="javascript:void(0);" class="icon" onclick="makeTopnavResponsive()">
                 <i class="fa fa-bars"></i>
-              </a>  
+              </a>
             <div class="search-container">
                 <input type='text' placeholder="search">
-                <button type="button"><i class="fa fa-search"></i></button>
+                <button type="button" id="website-search-button"><i class="fa fa-search"></i></button>
             </div>
             <a href="#home" class="active">HOME</a>
             <a href="#news">SCRIBBLES</a>
@@ -51,13 +38,9 @@
             <a href="#about">FORUM</a>
             <a href="#about">LEADERBOARD</a>
             <a href="#about">ABOUT</a>
-           
-            
         </div>
       </div>
 
-
-
-</bodystyle="margin: 0;">
+</body style="margin: 0;">
 
 </html>
