@@ -37,22 +37,28 @@
     <div class="header">
         <img src="./img/isLogo.svg" alt="Idle Scribbler">
         <div class="topnav" id="myTopnav">
-        
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
-              </a>  
-            <div class="search-container">
-                <input type='text' placeholder="search">
-                <button type="button"><i class="fa fa-search"></i></button>
-            </div>
+            </a>  
+            <div id="cover">
+                <form method="get" action="">
+                  <div class="tb">
+                    <div class="td"><input type="text" placeholder="" required=""></div>
+                    <div class="td" id="s-cover">
+                      <button type="submit">
+                        <div id="s-circle"></div>
+                        <span></span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+            </div>      
             <a href="#home" class="active">HOME</a>
             <a href="#news">SCRIBBLES</a>
             <a href="#contact">PHOTOS</a>
             <a href="#about">FORUM</a>
             <a href="#about">LEADERBOARD</a>
             <a href="#about">ABOUT</a>
-           
-            
         </div>
       </div>
 
