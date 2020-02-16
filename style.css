@@ -57,7 +57,9 @@
       float: right;
       display: block;
     }
-    
+    .nonresponsivecover {
+      top: 0;
+    }
   }
 
   @media screen and (max-width: 370px) {
@@ -70,10 +72,12 @@
       color: black;
       bottom: 0;
       padding: 5px;
+      
     }
+
     .topnav a.icon {display: none;}
     .header img {float: none; margin-left: auto; margin-right: auto;}
-    .search-container {
+    #cover {
       float: right;
       display: block;
     }
@@ -98,7 +102,7 @@
     }
   }
 
-  .tb
+.tb
 {
     display: table;
     width: 100%;
@@ -130,7 +134,7 @@ input, button
     transform: scale(0.22);
     font-family: "Malayalam MN";
     padding: 8px 25px;
-    margin: -95px -208px 0px auto;
+    margin: -95px -218px 0px auto;
     border-radius: 20px;
 }
 
